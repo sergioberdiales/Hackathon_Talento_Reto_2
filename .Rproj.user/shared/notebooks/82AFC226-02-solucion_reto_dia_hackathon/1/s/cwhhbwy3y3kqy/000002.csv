@@ -1,0 +1,2 @@
+"0","signals_data$Timestamp <- ymd_hms(signals_data$Timestamp)"
+"0","signals_data$Turbine_ID <- as.factor(signals_data$Turbine_ID)"

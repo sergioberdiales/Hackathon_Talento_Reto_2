@@ -1,0 +1,5 @@
+"0","logs_data_1 <- logs_data %>%"
+"0","               select(TimeDetected,"
+"0","                      UnitTitle) "
+"0","logs_data_1$TimeDetected <- ymd_hms(logs_data_1$TimeDetected)"
+"0","logs_data_1$UnitTitle <- as.factor(logs_data_1$UnitTitle)"

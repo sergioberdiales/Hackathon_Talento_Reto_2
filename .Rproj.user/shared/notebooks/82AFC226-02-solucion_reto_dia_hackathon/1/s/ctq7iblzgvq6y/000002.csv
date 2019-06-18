@@ -1,0 +1,3 @@
+"0","logs_files <- list.files(path = ""data/Training"", pattern = ""wind-farm-1-logs*"")"
+"0","metmast_files <- list.files(path = ""data/Training"", pattern = ""wind-farm-1-metmast*"")"
+"0","signals_files <- list.files(path = ""data/Training"", pattern = ""wind-farm-1-signals*"")"

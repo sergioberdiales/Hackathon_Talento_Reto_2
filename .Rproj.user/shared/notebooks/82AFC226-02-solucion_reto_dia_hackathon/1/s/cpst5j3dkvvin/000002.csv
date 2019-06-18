@@ -1,0 +1,2 @@
+"0","write_csv(metmast_signals_data, ""final_csvs/Training/metmast_signals_data.csv"")"
+"0","write_csv(logs_data_1, ""final_csvs/Training/logs_data_1.csv"")"

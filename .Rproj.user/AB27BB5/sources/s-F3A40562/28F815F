@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560864100855.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3684743158",
+    "id" : "28F815F",
+    "lastKnownWriteTime" : 1560864654,
+    "last_content_update" : 1560864654302,
+    "path" : "C:/Users/SErgio/OneDrive/00_proyectos_trabajo/2019-06-04_hackathon_talento/Hackathon_Talento_Reto_2/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "18,143",
+        "scrollLine" : "11"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

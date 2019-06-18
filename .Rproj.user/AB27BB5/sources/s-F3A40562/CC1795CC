@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560866225267.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CC1795CC",
+    "lastKnownWriteTime" : 1560866260,
+    "last_content_update" : 1560866260843,
+    "path" : "C:/Users/SErgio/OneDrive/00_proyectos_trabajo/2019-06-04_hackathon_talento/Hackathon_Talento_Reto_2/_wind_farm.Rmd",
+    "project_path" : "_wind_farm.Rmd",
+    "properties" : {
+        "cursorPosition" : "226,0",
+        "scrollLine" : "177"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
