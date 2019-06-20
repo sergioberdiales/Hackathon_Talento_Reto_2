@@ -129,7 +129,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html"><i class="fa fa-check"></i><b>2</b> Solución reto día del hackathon.</a><ul>
 <li class="chapter" data-level="2.1" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#carga-de-las-librerias-necesarias."><i class="fa fa-check"></i><b>2.1</b> Carga de las librerias necesarias.</a></li>
 <li class="chapter" data-level="2.2" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#preparacion-datos-train."><i class="fa fa-check"></i><b>2.2</b> Preparación datos “train”.</a></li>
-<li class="chapter" data-level="2.3" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#archivos-de-test"><i class="fa fa-check"></i><b>2.3</b> Archivos de test</a></li>
+<li class="chapter" data-level="2.3" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#preparacion-datos-test."><i class="fa fa-check"></i><b>2.3</b> Preparación datos “test”.</a></li>
 <li class="chapter" data-level="2.4" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#modelizacion-en-bigml"><i class="fa fa-check"></i><b>2.4</b> Modelización en BigML</a></li>
 </ul></li>
 </ul>
@@ -151,7 +151,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="solucion-reto-dia-del-hackathon." class="section level1">
 <h1><span class="header-section-number">2</span> Solución reto día del hackathon.</h1>
-<p>En este apartado está descrito cómo nuestro equipo solucionó este reto durante el Hackathon. Se han añadido comentarios para dar más claridad al desarrollo pero no hemos añadido nada sustancial al análisis, por lo que, por falta de tiempo o error nuestro, no fue incluido en el día de la competición no lo hemos añadido más tarde.</p>
+<p>En este apartado está descrito cómo nuestro equipo solucionó este reto durante el Hackathon. Se han añadido comentarios para dar más claridad al desarrollo. Aparte de estas notas no hemos añadido nada sustancial al análisis que no fuese incluido durante la competición.</p>
 <p>Para ver un análisis hecho con más tiempo y más cercano a lo que nos hubiese gustado hacer puedes pasar directamente al apartado 3 de este notebook.</p>
 <div id="carga-de-las-librerias-necesarias." class="section level2">
 <h2><span class="header-section-number">2.1</span> Carga de las librerias necesarias.</h2>
@@ -615,8 +615,8 @@ signals_data<span class="op">$</span>Turbine_ID &lt;-<span class="st"> </span><s
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(metmast_signals_data, <span class="st">&quot;final_csvs/Training/metmast_signals_data.csv&quot;</span>)
 <span class="kw">write_csv</span>(logs_data_<span class="dv">1</span>, <span class="st">&quot;final_csvs/Training/logs_data_1.csv&quot;</span>)</code></pre>
 </div>
-<div id="archivos-de-test" class="section level2">
-<h2><span class="header-section-number">2.3</span> Archivos de test</h2>
+<div id="preparacion-datos-test." class="section level2">
+<h2><span class="header-section-number">2.3</span> Preparación datos “test”.</h2>
 <pre class="sourceCode r"><code class="sourceCode r">test_metmast &lt;-<span class="st"> </span><span class="kw">read_xlsx</span>(<span class="dt">path =</span> <span class="st">&quot;./Data/Test/wind-farm-1-metmast-testing.xlsx&quot;</span>)
 
 test_metmast_data_<span class="dv">1</span> &lt;-<span class="st"> </span>test_metmast <span class="op">%&gt;%</span>

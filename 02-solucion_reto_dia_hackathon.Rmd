@@ -1,8 +1,8 @@
 # Solución reto día del hackathon.
 
-En este apartado está descrito cómo nuestro equipo solucionó este reto durante el Hackathon. Se han añadido comentarios para dar más claridad al desarrollo pero no hemos añadido nada sustancial al análisis, por lo que, por falta de tiempo o error nuestro, no fue incluido en el día de la competición no lo hemos añadido más tarde. 
+En este apartado está descrito cómo nuestro equipo solucionó este reto durante el Hackathon. Se han añadido comentarios para dar más claridad al desarrollo. Aparte de estas notas no hemos añadido nada sustancial al análisis que no fuese incluido durante la competición.  
 
-Para ver un análisis hecho con más tiempo y más cercano a lo que nos hubiese gustado hacer puedes pasar directamente al apartado 3 de este notebook. 
+Para ver un análisis hecho con más tiempo y más cercano a lo que nos hubiese gustado hacer puedes pasar directamente al apartado 3 de este notebook.
 
 ## Carga de las librerias necesarias.
 
@@ -14,7 +14,6 @@ library(GGally)
 library(lubridate)
 library(stringr)
 ```
-
 
 ## Preparación datos "train".
 
@@ -134,7 +133,7 @@ write_csv(metmast_signals_data, "final_csvs/Training/metmast_signals_data.csv")
 write_csv(logs_data_1, "final_csvs/Training/logs_data_1.csv")
 ```
 
-## Archivos de test
+## Preparación datos "test".
 
 ```{r , warning= FALSE, message= FALSE}
 test_metmast <- read_xlsx(path = "./Data/Test/wind-farm-1-metmast-testing.xlsx")
@@ -182,8 +181,6 @@ Aquí se ven los datasets que creamos a partir de las dos fuentes. Como en el re
 
 Detalle del dataset de errores con el campo fecha normalizada.
 ![](imgs/IMG_0453.jpg)
-
-
 
 Detalle de la función Lisp que utilizamos para normalizar los minutos de los logs.
 ![](imgs/IMG_0454.jpg)

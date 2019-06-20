@@ -129,7 +129,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html"><i class="fa fa-check"></i><b>2</b> Solución reto día del hackathon.</a><ul>
 <li class="chapter" data-level="2.1" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#carga-de-las-librerias-necesarias."><i class="fa fa-check"></i><b>2.1</b> Carga de las librerias necesarias.</a></li>
 <li class="chapter" data-level="2.2" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#preparacion-datos-train."><i class="fa fa-check"></i><b>2.2</b> Preparación datos “train”.</a></li>
-<li class="chapter" data-level="2.3" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#archivos-de-test"><i class="fa fa-check"></i><b>2.3</b> Archivos de test</a></li>
+<li class="chapter" data-level="2.3" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#preparacion-datos-test."><i class="fa fa-check"></i><b>2.3</b> Preparación datos “test”.</a></li>
 <li class="chapter" data-level="2.4" data-path="solucion-reto-dia-del-hackathon-.html"><a href="solucion-reto-dia-del-hackathon-.html#modelizacion-en-bigml"><i class="fa fa-check"></i><b>2.4</b> Modelización en BigML</a></li>
 </ul></li>
 </ul>
@@ -152,56 +152,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="planteamiento-del-reto-wind-farm." class="section level1">
 <h1><span class="header-section-number">1</span> Planteamiento del reto Wind Farm.</h1>
 <p>En esta sección simplemente trasladamos el reto Wind Farm tal y como fue planteado durante el Hackathon:</p>
-<p>"MANTENIMIENTO PREDICTIVO A TRAVÉS DEL ANÁLISIS DE DATOS DE TURBINAS EÓLICAS</p>
+<p>"<strong>MANTENIMIENTO PREDICTIVO A TRAVÉS DEL ANÁLISIS DE DATOS DE TURBINAS EÓLICAS</strong></p>
 <p>El mantenimiento predictivo se orienta a conseguir sistemas que indiquen con cierto nivel de confianza
 cuándo fallará cierto equipo, máquina o componente e identificar el momento adecuado para realizar una
-intervención de mantenimiento.
-Como estrategia de mantenimiento tiene el potencial de disminuir los costes OPEX ya que puede minimizar
+intervención de mantenimiento.</p>
+<p>Como estrategia de mantenimiento tiene el potencial de disminuir los costes OPEX ya que puede minimizar
 tanto los costes de sustitución de equipos o componentes como la disminución del tiempo productivo
-perdido para el mantenimiento.
-EN ESTE RETO HAS DE ANTICIPAR FALLOS EN TURBINAS EÓLICAS EN ETAPAS TEMPRANAS
-Los componentes a monitorear serán:
-• Caja de cambios
-• Generador
-• Rodamiento del generador
-• Transformador
-• Grupo hidráulico
-A lo largo del desarrollo de este reto trabajaréis con datos procedentes de turbinas de aerogeneradores. Os
+perdido para el mantenimiento.</p>
+<p><strong>EN ESTE RETO HAS DE ANTICIPAR FALLOS EN TURBINAS EÓLICAS EN ETAPAS TEMPRANAS</strong></p>
+<p>Los componentes a monitorear serán:</p>
+<p>• Caja de cambios<br />
+• Generador<br />
+• Rodamiento del generador<br />
+• Transformador<br />
+• Grupo hidráulico</p>
+<p>A lo largo del desarrollo de este reto trabajaréis con datos procedentes de turbinas de aerogeneradores. Os
 proporcionamos registros SCADA de un año, separados por meses, procedentes de las turbinas de distintas
-torres eólicas (ficheros “Signals”).
-Por otro lado, disponéis de datos meteorológicos de la localización de las turbinas (ficheros “Metmast”).
-Finalmente tenéis datos sobre los fallos que han ocurrido en esas turbinas (ficheros “Logs”).
-Si queréis utilizar más datos adicionales, éstos deberán proceder de fuentes públicas libres y deberrán proceder de fuentes públicas libres y deberéis describir
-el tipo de datos y la forma de uso en la solución obtenida.
-Os animamos a buscar soluciones de mantenimiento inteligente para ser capaces de predecir cuándo puede
+torres eólicas <strong>(ficheros “Signals”)</strong>.</p>
+<p>Por otro lado, disponéis de datos meteorológicos de la localización de las turbinas <strong>(ficheros “Metmast”)</strong>.<br />
+Finalmente tenéis datos sobre los fallos que han ocurrido en esas turbinas <strong>(ficheros “Logs”)</strong>.</p>
+<p>Si queréis utilizar más datos adicionales, éstos deberán proceder de fuentes públicas libres y deberrán proceder de fuentes públicas libres y deberéis describir el tipo de datos y la forma de uso en la solución obtenida.</p>
+<p>Os animamos a buscar soluciones de mantenimiento inteligente para ser capaces de predecir cuándo puede
 fallar un determinado equipo o componente e identificar el momento adecuado para realizar una labor de
-mantenimiento sobre él.
-De esta forma desarrollaréis soluciones orientadas a conseguir un gran ahorro económico, optimización de la
+mantenimiento sobre él.</p>
+<p>De esta forma desarrollaréis soluciones orientadas a conseguir un gran ahorro económico, optimización de la
 vida útil de las instalaciones y disminución de los residuos asociados a las labores de mantenimiento, mejorando la sostenibilidad de las operaciones.</p>
-<p>De forma más concreta, el reto consiste en determinar la existencia de fallos de un conjunto de torres en un
-día (en total 20 entradas).
-La descripción de los ficheros de señales se adjunta en un fichero pdf. Los datos meteorológicos son relativos
-a viento, presión, temperatura, etc. Los ficheros “Logs” tienen lo siguientes campos:
-• TimeDetected: Día y hora a la que fue detectado el fallo
-• TimeReset: Hola a la que dejó de recibirse el fallo
-• UnitTitle: Identificador de la turbina
-• Remark: Identificación del error
-Se busca:
-• La predicción de la existencia de error o no (no se pide la identificación del tipo de error) en las turbinas para
-20 casos puntuales.
-• Se valorará también el planteamiento de una aplicación orientada a EDP para realizar estas predicciones de
-forma continua en sus instalaciones. En este planteamiento tenéis total libertad para incluir todo lo que creáis
-necesario como el modo de actualización de modelos, los datos necesarios, pantallas, diseño, etc.</p>
-<p>El equipo dispondrá de 2 horas y media para la realización del reto y 5 minutos para presentar el trabajo
-realizado al tribunal y al resto de equipos. En esta presentación se valorará la explicación del procesamiento de
-datos realizado, los criterios de selección de los modelos, la metodología empleada, el diseño de la aplicación, etc.
-Para la valoración de la predicción realizada, los organizadores utilizaremos un conjunto de datos con 20
-entradas (en fichero “Logs”, “Metmast” y “Signals”). Se os proporcionarán dichas mediciones, pero sin el dato de
-existencia de error, que será secreto hasta el momento de la presentación de las soluciones, momento en el
-cuál se hará publico a los equipos.
-Valoraremos positivamente a aquellos equipos que hayan conseguido realizar predicciones con el menor error
-posible respecto del dato real.
-¡MUCHA SUERTE!"</p>
+<p><strong>De forma más concreta, el reto consiste en determinar la existencia de fallos de un conjunto de torres en un
+día (en total 20 entradas).</strong></p>
+<p>La descripción de los ficheros de señales se adjunta en un fichero pdf. Los datos meteorológicos son relativos
+a viento, presión, temperatura, etc. Los ficheros “Logs” tienen lo siguientes campos:</p>
+<p>• TimeDetected: Día y hora a la que fue detectado el fallo.<br />
+• TimeReset: Hola a la que dejó de recibirse el fallo.<br />
+• UnitTitle: Identificador de la turbina.<br />
+• Remark: Identificación del error.</p>
+<p><strong>Se busca:</strong></p>
+<p><strong>• La predicción de la existencia de error o no (no se pide la identificación del tipo de error) en las turbinas para 20 casos puntuales.</strong></p>
+<p>• Se valorará también el planteamiento de una aplicación orientada a EDP para realizar estas predicciones de
+forma continua en sus instalaciones. En este planteamiento tenéis total libertad para incluir todo lo que creáis necesario como el modo de actualización de modelos, los datos necesarios, pantallas, diseño, etc.</p>
+<p>El equipo dispondrá de <strong>2 horas y media</strong> para la realización del reto y <strong>5 minutos</strong> para presentar el trabajo realizado al tribunal y al resto de equipos. En esta presentación se valorará la explicación del procesamiento de datos realizado, los criterios de selección de los modelos, la metodología empleada, el diseño de la aplicación, etc.</p>
+<p>Para la valoración de la predicción realizada, los organizadores utilizaremos un conjunto de datos con 20
+entradas (en fichero “Logs”, “Metmast” y “Signals”). Se os proporcionarán dichas mediciones, pero sin el dato de existencia de error, que será secreto hasta el momento de la presentación de las soluciones, momento en el
+cuál se hará publico a los equipos.</p>
+<p>Valoraremos positivamente a aquellos equipos que hayan conseguido realizar predicciones con el menor error
+posible respecto del dato real.</p>
+<p><strong>¡MUCHA SUERTE!</strong>"</p>
 
 </div>
             </section>

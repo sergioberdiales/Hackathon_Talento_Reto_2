@@ -2,58 +2,69 @@
 
 En esta sección simplemente trasladamos el reto Wind Farm tal y como fue planteado durante el Hackathon: 
 
-"MANTENIMIENTO PREDICTIVO A TRAVÉS DEL ANÁLISIS DE DATOS DE TURBINAS EÓLICAS
+"__MANTENIMIENTO PREDICTIVO A TRAVÉS DEL ANÁLISIS DE DATOS DE TURBINAS EÓLICAS__
 
 El mantenimiento predictivo se orienta a conseguir sistemas que indiquen con cierto nivel de confianza
 cuándo fallará cierto equipo, máquina o componente e identificar el momento adecuado para realizar una
-intervención de mantenimiento.
+intervención de mantenimiento.  
+
 Como estrategia de mantenimiento tiene el potencial de disminuir los costes OPEX ya que puede minimizar
 tanto los costes de sustitución de equipos o componentes como la disminución del tiempo productivo
-perdido para el mantenimiento.
-EN ESTE RETO HAS DE ANTICIPAR FALLOS EN TURBINAS EÓLICAS EN ETAPAS TEMPRANAS
-Los componentes a monitorear serán:
-• Caja de cambios
-• Generador
-• Rodamiento del generador
-• Transformador
-• Grupo hidráulico
+perdido para el mantenimiento.  
+
+__EN ESTE RETO HAS DE ANTICIPAR FALLOS EN TURBINAS EÓLICAS EN ETAPAS TEMPRANAS__ 
+
+Los componentes a monitorear serán:  
+
+• Caja de cambios  
+• Generador  
+• Rodamiento del generador  
+• Transformador  
+• Grupo hidráulico  
+
 A lo largo del desarrollo de este reto trabajaréis con datos procedentes de turbinas de aerogeneradores. Os
 proporcionamos registros SCADA de un año, separados por meses, procedentes de las turbinas de distintas
-torres eólicas (ficheros “Signals”).
-Por otro lado, disponéis de datos meteorológicos de la localización de las turbinas (ficheros “Metmast”).
-Finalmente tenéis datos sobre los fallos que han ocurrido en esas turbinas (ficheros “Logs”).
-Si queréis utilizar más datos adicionales, éstos deberán proceder de fuentes públicas libres y deberrán proceder de fuentes públicas libres y deberéis describir
-el tipo de datos y la forma de uso en la solución obtenida.
+torres eólicas __(ficheros “Signals”)__.  
+
+Por otro lado, disponéis de datos meteorológicos de la localización de las turbinas __(ficheros “Metmast”)__.  
+Finalmente tenéis datos sobre los fallos que han ocurrido en esas turbinas __(ficheros “Logs”)__.  
+
+Si queréis utilizar más datos adicionales, éstos deberán proceder de fuentes públicas libres y deberrán proceder de fuentes públicas libres y deberéis describir el tipo de datos y la forma de uso en la solución obtenida.  
+
 Os animamos a buscar soluciones de mantenimiento inteligente para ser capaces de predecir cuándo puede
 fallar un determinado equipo o componente e identificar el momento adecuado para realizar una labor de
-mantenimiento sobre él.
+mantenimiento sobre él.  
+
 De esta forma desarrollaréis soluciones orientadas a conseguir un gran ahorro económico, optimización de la
-vida útil de las instalaciones y disminución de los residuos asociados a las labores de mantenimiento, mejorando la sostenibilidad de las operaciones.
+vida útil de las instalaciones y disminución de los residuos asociados a las labores de mantenimiento, mejorando la sostenibilidad de las operaciones.  
 
-De forma más concreta, el reto consiste en determinar la existencia de fallos de un conjunto de torres en un
-día (en total 20 entradas).
+__De forma más concreta, el reto consiste en determinar la existencia de fallos de un conjunto de torres en un
+día (en total 20 entradas).__  
+
 La descripción de los ficheros de señales se adjunta en un fichero pdf. Los datos meteorológicos son relativos
-a viento, presión, temperatura, etc. Los ficheros “Logs” tienen lo siguientes campos:
-• TimeDetected: Día y hora a la que fue detectado el fallo
-• TimeReset: Hola a la que dejó de recibirse el fallo
-• UnitTitle: Identificador de la turbina
-• Remark: Identificación del error
-Se busca:
-• La predicción de la existencia de error o no (no se pide la identificación del tipo de error) en las turbinas para
-20 casos puntuales.
-• Se valorará también el planteamiento de una aplicación orientada a EDP para realizar estas predicciones de
-forma continua en sus instalaciones. En este planteamiento tenéis total libertad para incluir todo lo que creáis
-necesario como el modo de actualización de modelos, los datos necesarios, pantallas, diseño, etc.
+a viento, presión, temperatura, etc. Los ficheros “Logs” tienen lo siguientes campos:  
 
-El equipo dispondrá de 2 horas y media para la realización del reto y 5 minutos para presentar el trabajo
-realizado al tribunal y al resto de equipos. En esta presentación se valorará la explicación del procesamiento de
-datos realizado, los criterios de selección de los modelos, la metodología empleada, el diseño de la aplicación, etc.
+• TimeDetected: Día y hora a la que fue detectado el fallo.  
+• TimeReset: Hola a la que dejó de recibirse el fallo.  
+• UnitTitle: Identificador de la turbina.  
+• Remark: Identificación del error.  
+
+__Se busca:__ 
+
+__• La predicción de la existencia de error o no (no se pide la identificación del tipo de error) en las turbinas para 20 casos puntuales.__
+
+• Se valorará también el planteamiento de una aplicación orientada a EDP para realizar estas predicciones de
+forma continua en sus instalaciones. En este planteamiento tenéis total libertad para incluir todo lo que creáis necesario como el modo de actualización de modelos, los datos necesarios, pantallas, diseño, etc.  
+
+El equipo dispondrá de __2 horas y media__ para la realización del reto y __5 minutos__ para presentar el trabajo realizado al tribunal y al resto de equipos. En esta presentación se valorará la explicación del procesamiento de datos realizado, los criterios de selección de los modelos, la metodología empleada, el diseño de la aplicación, etc.  
+
 Para la valoración de la predicción realizada, los organizadores utilizaremos un conjunto de datos con 20
-entradas (en fichero “Logs”, “Metmast” y “Signals”). Se os proporcionarán dichas mediciones, pero sin el dato de
-existencia de error, que será secreto hasta el momento de la presentación de las soluciones, momento en el
-cuál se hará publico a los equipos.
+entradas (en fichero “Logs”, “Metmast” y “Signals”). Se os proporcionarán dichas mediciones, pero sin el dato de existencia de error, que será secreto hasta el momento de la presentación de las soluciones, momento en el
+cuál se hará publico a los equipos.  
+
 Valoraremos positivamente a aquellos equipos que hayan conseguido realizar predicciones con el menor error
-posible respecto del dato real.
-¡MUCHA SUERTE!"
+posible respecto del dato real.  
+
+__¡MUCHA SUERTE!__"
 
 

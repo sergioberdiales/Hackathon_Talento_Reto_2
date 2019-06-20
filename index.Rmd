@@ -20,7 +20,7 @@ El contenido de este notebook corresponde a la realización del segundo reto, cu
 
 Pese a todo esto tuvimos la suerte de poder pasar a la final y finalmente ganar la competición.
 
-Todo el código y archivos necesarios para ejecutar este notebook está guardado en [este repositorio de Github] (https://github.com/sergioberdiales/Hackathon_Talento_Reto_2_Wind_Farm).
+Todo el código y archivos necesarios para ejecutar este notebook está guardado en [este repositorio de Github](https://github.com/sergioberdiales/Hackathon_Talento_Reto_2_Wind_Farm).
 
 Para cualquier consulta o sugerencia nos puedes contactar vía Linkedin:  
 - [Linkedin - Sergio Berdiales]( https://www.linkedin.com/in/sergioberdiales/).  
